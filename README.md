@@ -5,6 +5,10 @@
 - [About](#section-1)
 - [Description](#section-2) 
 - [Design](#section-2)
+  - [Pre-Charge Circuit](#subsection-1-1)
+  - [Sense Amplifier](#subsection-1-2)
+  - [Row Decoder](#subsection-1-3)
+  - [Data Driver](#subsection-1-4)
 
 # 6T-SRAM Cell
 ![Screenshot from 2023-10-06 15-09-14 (2)](https://github.com/Subha175/SRAM/assets/123578848/b6b991b8-07eb-4c6e-b3ef-06f04df5b324)
