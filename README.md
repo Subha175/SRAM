@@ -18,8 +18,7 @@
 ## Design
 
 - Pre-Charge Circuit -
- The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.]
-     -[The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.](#subsection-1-1)
+ The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
 ![Screenshot from 2023-10-06 15-10-19 (2)](https://github.com/Subha175/SRAM/assets/123578848/6921211c-5133-4213-b052-3e8a6ecd2fad)
 
 - [Sense Amplifier](#section-1)
