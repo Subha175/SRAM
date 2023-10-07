@@ -6,6 +6,10 @@
 ### Subsection 1.1
 ## Section 2
 
+[Section 1](#section-1)
+[Subsection 1.1](#subsection-1-1)
+[Section 2](#section-2)
+
 ![Screenshot from 2023-10-06 15-09-14 (2)](https://github.com/Subha175/SRAM/assets/123578848/b6b991b8-07eb-4c6e-b3ef-06f04df5b324)
 
 
