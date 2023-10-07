@@ -16,6 +16,12 @@
 ## About
 ## Description
 ## Design
+
+- Pre-charge Circuit
+![Screenshot from 2023-10-06 15-10-19 (2)](https://github.com/Subha175/SRAM/assets/123578848/6921211c-5133-4213-b052-3e8a6ecd2fad)
+- Row Decoder
+
+
   
 
 
