@@ -14,8 +14,19 @@
 ![Screenshot from 2023-10-06 15-09-14 (2)](https://github.com/Subha175/SRAM/assets/123578848/b6b991b8-07eb-4c6e-b3ef-06f04df5b324)
 
 ## About
+The 6T SRAM cell is one of the most common and fundamental structures used to store a single bit of data. It consists of six transistors arranged in a way that  it can hold its state as long as power is supplied.
+
 ## Description
+Transistors in a 6T SRAM cell: A 6T SRAM cell comprises two cross-coupled inverters and two access transistors for read and write operations.
+
+Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type (PMOS) transistors connected in a feedback loop. They store the data bit in a latched manner.
+
+Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for reading/writing) and wordlines (for selecting the cell).
+
 ## Design
+
+- 6T-SRAM Cell -
+![Screenshot from 2023-10-06 15-09-14 (2)](https://github.com/Subha175/SRAM/assets/123578848/b6b991b8-07eb-4c6e-b3ef-06f04df5b324)
 
 - Pre-Charge Circuit -
  The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
