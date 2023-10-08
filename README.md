@@ -6,7 +6,6 @@
 - [Description](#section-2) 
 - [Design](#section-2)
   - [6T-SRAM Cell](#subsection-1-1)
-    -[Hold](#subsection-1-1-1)
   - [Pre-Charge Circuit](#subsection-1-2)
   - [Sense Amplifier](#subsection-1-3)
   - [Row Decoder](#subsection-1-4)
