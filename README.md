@@ -2,8 +2,8 @@
 6T SRAM is a type of static random-access commonly used in modern integrated circuits for storing data.It gets its name from its basic storage cell, which consists of six transistors. These six transistors are arranged in a way that allows them to store a single binary bit of data.
 
 # Table of Content
-- [About](#section-1)
-- [Description](#section-2) 
+- [About](#About)
+- [Description](#Description) 
 - [Design](#section-2)
   - [6T-SRAM Cell](#subsection-1-1)
   - [Pre-Charge Circuit](#subsection-1-2)
