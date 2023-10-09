@@ -31,10 +31,9 @@ Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type 
  Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for       reading/writing) and wordlines (for selecting the cell).
  
 
+![6TOK--2 drawio](https://github.com/Subha175/SRAM/assets/123578848/31c5b188-7ac6-4825-961f-1a9fd3880c08)
     
-![6TFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/2cfa00fd-bd36-421f-9592-90c35eed4ca3)
 
-![6T_STAM](https://github.com/Subha175/SRAM/assets/123578848/2110c37b-c0a0-4f65-8847-c8f29f71fee5)
 
 - Read :-
  <br> 1.Assume logic 0 at node (1) i.e. V1 = 0V.
