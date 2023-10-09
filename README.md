@@ -34,8 +34,10 @@ Access Transistors: These are used to control the read and write operations. The
 
 ![6T_STAM](https://github.com/Subha175/SRAM/assets/123578848/2110c37b-c0a0-4f65-8847-c8f29f71fee5)
 
-- Read -
-- 
+- Read - 
+  
+![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
+ 
 
 - Pre-Charge Circuit -
  The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
