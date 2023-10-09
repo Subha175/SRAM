@@ -84,6 +84,8 @@ In SRAM cells, sense amplifiers are used to amplify and sense the small voltage 
 
 - Row Decoder -
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
+![DECODER drawio](https://github.com/Subha175/SRAM/assets/123578848/28dc0b06-c552-4b8d-b92a-155de9817f83)
+
 ![Screenshot from 2023-10-06 15-12-20 (2)](https://github.com/Subha175/SRAM/assets/123578848/04183ac3-8080-4dda-9091-da67748e78d3)
 
 
