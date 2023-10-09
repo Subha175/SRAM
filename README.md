@@ -37,6 +37,10 @@ Access Transistors: These are used to control the read and write operations. The
 - Read - 
   
 ![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
+
+- Write -
+
+
  
 
 - Pre-Charge Circuit -
