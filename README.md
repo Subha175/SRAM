@@ -5,11 +5,11 @@
 - [About](#About)
 - [Description](#Description) 
 - [Design](#Design)
-  - [6T-SRAM Cell](#6T-SRAM Cell)
-  - [Pre-Charge Circuit](#Pre-ChargeCircuit-1-2)
-  - [Sense Amplifier](#sense-amplifier-1-3)
-  - [Row Decoder](#subsection-1-4)
-  - [Data Driver](#subsection-1-5)
+  - [6T-SRAM Cell](#6T-SRAM-Cell)
+  - [Pre-Charge Circuit](#Pre-ChargeCircuit)
+  - [Sense Amplifier](#sense-amplifier)
+  - [Row Decoder](#Row-Decoder)
+  - [Data Driver](#Data-Driver)
 
 ## About
 The 6T SRAM cell is one of the most common and fundamental structures used to store a single bit of data. It consists of six transistors arranged in a way that  it can hold its state as long as power is supplied.
