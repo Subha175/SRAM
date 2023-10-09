@@ -69,6 +69,7 @@ capacitor which causes V1 to increase.
 
 - Pre-Charge Circuit -
 The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
+
 ![PCFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/28380285-89c0-443e-870a-033021312c4a)
 ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3)
 
@@ -76,6 +77,7 @@ The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a
 
 - Sense Amplifier -
 In SRAM cells, sense amplifiers are used to amplify and sense the small voltage difference between the bitlines (BL and BLB) during read operations. Sense amplifiers play a vital role in determining the stored data within the SRAM cell.
+
 ![SAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/864d1569-161c-414d-b71f-39e195edd017)
 
 
@@ -84,6 +86,7 @@ In SRAM cells, sense amplifiers are used to amplify and sense the small voltage 
 
 - Row Decoder -
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
+
 ![ROWDECODER drawio](https://github.com/Subha175/SRAM/assets/123578848/5b6b5a15-57aa-42e4-b809-63b567d2e23e)
 
 
