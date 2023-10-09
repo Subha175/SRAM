@@ -7,7 +7,7 @@
 - [Design](#Design)
   - [6T-SRAM Cell](#6T-SRAM Cell)
   - [Pre-Charge Circuit](#Pre-ChargeCircuit-1-2)
-  - [Sense Amplifier](#sense-amplifier)
+  - [Sense Amplifier](#sense-amplifier-1-3)
   - [Row Decoder](#subsection-1-4)
   - [Data Driver](#subsection-1-5)
 
