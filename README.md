@@ -24,8 +24,8 @@ The 6T SRAM cell is one of the most common and fundamental structures used to st
 [Cadence Spectre Circuit Stimulator :](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-fmc-analysis.html?utm_campaign=Custom_Virtuoso_Studio_product_eu_google_search_june_2023&utm_source=google&utm_medium=search&utm_content=cdn_paid_media&utm_content=Circuit_Simulation&s_kwcid=AL!14272!3!662289232220!b!!g!!circuit%20simulation&gad=1&gclid=Cj0KCQjwpompBhDZARIsAFD_Fp8Z-SxLLihhZBFwTmCU69lX0z8FEUvoFW2uLaLdkUzkxbE_Gtb2_GUaAi4xEALw_wcB) Spectre is Cadence's analog and mixed-signal simulation tool. It is used for simulating the SRAM cell to ensure that it operates correctly under various conditions and meets performance specifications.
 
 
-## Design
-- 6T-SRAM Cell :-
+# Design
+## 6T-SRAM Cell
 <br> Transistors in a 6T SRAM cell: A 6T SRAM cell comprises two cross-coupled inverters and two access transistors for read and write operations.
 Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type (PMOS) transistors connected in a feedback loop. They store the data bit in a      latched manner.
  Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for       reading/writing) and wordlines (for selecting the cell).
@@ -67,7 +67,7 @@ capacitor which causes V1 to increase.
 
  
 
-- Pre-Charge Circuit -
+## Pre-Charge Circuit 
 The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
 
 ![PCFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/28380285-89c0-443e-870a-033021312c4a)
@@ -75,7 +75,7 @@ The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a
 
 
 
-- Sense Amplifier -
+## Sense Amplifier 
 In SRAM cells, sense amplifiers are used to amplify and sense the small voltage difference between the bitlines (BL and BLB) during read operations. Sense amplifiers play a vital role in determining the stored data within the SRAM cell.
 
 ![SAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/864d1569-161c-414d-b71f-39e195edd017)
@@ -84,7 +84,7 @@ In SRAM cells, sense amplifiers are used to amplify and sense the small voltage 
 
 
 
-- Row Decoder -
+## Row Decoder 
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
 
 ![ROWDECODER drawio](https://github.com/Subha175/SRAM/assets/123578848/5b6b5a15-57aa-42e4-b809-63b567d2e23e)
