@@ -76,9 +76,10 @@ capacitor which causes V1 to increase.
 
 - Sense Amplifier -
 In SRAM cells, sense amplifiers are used to amplify and sense the small voltage difference between the bitlines (BL and BLB) during read operations. Sense amplifiers play a vital role in determining the stored data within the SRAM cell.
-![sense drawio](https://github.com/Subha175/SRAM/assets/123578848/1693dc69-618a-480a-893e-7a525401ae4d)
+![SAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/864d1569-161c-414d-b71f-39e195edd017)
 
-![SenseAmp](https://github.com/Subha175/SRAM/assets/123578848/bf8a518d-d157-43e5-b2cd-1e5b21973137)
+
+
 
 
 - Row Decoder -
