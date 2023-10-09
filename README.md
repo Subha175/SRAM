@@ -4,9 +4,9 @@
 # Table of Content
 - [About](#About)
 - [Description](#Description) 
-- [Design](#section-2)
-  - [6T-SRAM Cell](#subsection-1-1)
-  - [Pre-Charge Circuit](#subsection-1-2)
+- [Design](#Design)
+  - [6T-SRAM Cell](#6T-SRAMCell-1-1)
+  - [Pre-Charge Circuit](#Pre-ChargeCircuit-1-2)
   - [Sense Amplifier](#subsection-1-3)
   - [Row Decoder](#subsection-1-4)
   - [Data Driver](#subsection-1-5)
