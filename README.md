@@ -40,7 +40,8 @@ Access Transistors: These are used to control the read and write operations. The
 
 - Sense Amplifier -
 In SRAM cells, sense amplifiers are used to amplify and sense the small voltage difference between the bitlines (BL and BLB) during read operations. Sense amplifiers play a vital role in determining the stored data within the SRAM cell.
-![Screenshot from 2023-10-06 16-31-06 (2)](https://github.com/Subha175/SRAM/assets/123578848/15daa025-257a-449b-aa9e-9a894105fc0a)
+![SenseAmp](https://github.com/Subha175/SRAM/assets/123578848/bf8a518d-d157-43e5-b2cd-1e5b21973137)
+
 
 - Row Decoder -
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
