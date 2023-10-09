@@ -32,6 +32,7 @@ Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type 
  
 
     
+![6TFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/2cfa00fd-bd36-421f-9592-90c35eed4ca3)
 
 ![6T_STAM](https://github.com/Subha175/SRAM/assets/123578848/2110c37b-c0a0-4f65-8847-c8f29f71fee5)
 
