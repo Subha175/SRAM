@@ -15,8 +15,8 @@
   - [Data Driver](#Data-Driver)
 
 ## Introduction
-SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and communication systems. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing
-periodically which makes it the most popular memory cell among VLSI designers. Hence continuous work is going on for the better performance of SRAM cells.
+SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and communication systems. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous work is going on for the better performance of SRAM cells.Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1.Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors M5 and M6. The cell also has two bit-lines that control both the input and output of the data from the cell.The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
+
 ## Description
 ### Tools Used
 [Cadence Virtuoso Schematic Editor :](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-design/virtuoso-schematic-editor.html) Virtuoso is Cadence's flagship platform for custom IC design. It is often used for SRAM cell design and simulate custom circuitry, including SRAM bit-cells and peripheral circuitry.
@@ -36,19 +36,11 @@ Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type 
 
 
 - Read :-
- <br> 1.Assume logic 0 at node (1) i.e. V1 = 0V.
- <br> 2.Therefore, M5 and M2 are OFF and M1 & M6 are ON (linear).
- <br> 3.Therefore V1 = 0V and V2 = VDD.
- <br> 4.Word line is activated and data lines CC
-is pre-changed to VDD.
- <br> 5.Therefore, M3 and M4 are turned ON.
- <br> 6.Since for M4, drain and source are at same potential therefore no current flows here.
- <br> 7.But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND
-Voltage level at BL begins to drop which results in discharging of CC
-capacitor which causes V1 to increase.
- <br> 8.This is sensed by sense amplifier and amplified and read by data read circuit.
- <br> 9.Since V1 is increasing from 0V and it may turn on M2 if 
-  
+Assume logic 0 at node (1) i.e. V1 = 0V. Therefore, M5 and M2 are OFF and M1 & M6 are ON (linear). Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
+But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.This is sensed by sense amplifier and amplified and read by data read circuit.Since V1 is increasing from 0V and it may turn on M2 if
+
+
+
 ![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
 
 - Write :-
@@ -82,11 +74,6 @@ In SRAM cells, sense amplifiers are used to amplify and sense the small voltage 
 
 ![salast drawio](https://github.com/Subha175/SRAM/assets/123578848/3c9fb618-9602-4416-959d-4b3469c3d711)
 
-
-
-
-
-
 ## Row Decoder 
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
 
@@ -94,8 +81,13 @@ A row decoder in SRAM is responsible for selecting and activating the wordline a
 
 
 ## Data Driver
-The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable (WRITE_EN) signal is enabled; otherwise, the data is not written onto the bit-lines.
+The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable signal is enabled; otherwise, the data is not written onto the bit-lines.
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
+
+
+
+
+
 
 
 
