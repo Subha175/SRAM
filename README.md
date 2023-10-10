@@ -72,7 +72,7 @@ capacitor which causes V1 to increase.
 ## Pre-Charge Circuit 
 The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
 
-![PCFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/28380285-89c0-443e-870a-033021312c4a)
+![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
 ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3)
 
 
