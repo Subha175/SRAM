@@ -94,6 +94,7 @@ A row decoder in SRAM is responsible for selecting and activating the wordline a
 
 
 ## Data Driver
+The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable (WRITE_EN) signal is enabled; otherwise, the data is not written onto the bit-lines.
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
 
 
