@@ -38,7 +38,8 @@ Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type 
 - Read :-
 Assume logic 0 at node (1) i.e. V1 = 0V. Therefore, M5 and M2 are OFF and M1 & M6 are ON (linear). Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
 But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.This is sensed by sense amplifier and amplified and read by data read circuit.Since V1 is increasing from 0V and it may turn on M2 if
-
+<br> ![B7eqrW7](https://github.com/Subha175/SRAM/assets/123578848/733df1be-70b5-4e40-9171-3283b8b524a6)
+<br> M3 is in saturation region and M1 is in linear region
 
 
 ![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
