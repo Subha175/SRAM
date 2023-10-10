@@ -92,6 +92,7 @@ A row decoder in SRAM is responsible for selecting and activating the wordline a
 ![ROWDECODER drawio](https://github.com/Subha175/SRAM/assets/123578848/5b6b5a15-57aa-42e4-b809-63b567d2e23e)
 
 ## Data Driver
+![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
 
 
 
