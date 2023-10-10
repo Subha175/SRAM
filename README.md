@@ -80,7 +80,8 @@ The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a
 ## Sense Amplifier 
 In SRAM cells, sense amplifiers are used to amplify and sense the small voltage difference between the bitlines (BL and BLB) during read operations. Sense amplifiers play a vital role in determining the stored data within the SRAM cell.
 
-![SAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/864d1569-161c-414d-b71f-39e195edd017)
+![salast drawio](https://github.com/Subha175/SRAM/assets/123578848/3c9fb618-9602-4416-959d-4b3469c3d711)
+
 
 
 
