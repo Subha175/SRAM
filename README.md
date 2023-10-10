@@ -1,5 +1,5 @@
 # CMOS SRAM based on 0.18 um technology
-6T SRAM is a type of static random-access commonly used in modern integrated circuits for storing data.It gets its name from its basic storage cell, which consists of six transistors. These six transistors are arranged in a way that allows them to store a single binary bit of data.
+- 6T SRAM is a type of static random-access commonly used in modern integrated circuits for storing data.It gets its name from its basic storage cell, which consists of six transistors. These six transistors are arranged in a way that allows them to store a single binary bit of data.
 
 # Table of Content
 - [About](#About)
@@ -15,9 +15,9 @@
   - [Data Driver](#Data-Driver)
 
 ## Introduction
-- SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and  communication system. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers.Hence continuous workis going on for the better performance of SRAM cells. Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1.Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors M5 and M6. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
+- SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and  communication system. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous workis going on for the better performance of SRAM cells. Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1. Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors M5 and M6. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
 
-- SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous work is going on for the better performance of SRAM cells.Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1.Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors M5 and M6. The cell also has two bit-lines that control both the input and output of the data from the cell.The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
+
 
 ## Description
 ### Tools Used
@@ -28,16 +28,16 @@
 
 # Design
 ## 6T-SRAM Cell
-<br> Transistors in a 6T SRAM cell: A 6T SRAM cell comprises two cross-coupled inverters and two access transistors for read and write operations.
-Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type (PMOS) transistors connected in a feedback loop. They store the data bit in a latched manner.
- Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for reading/writing) and wordlines (for selecting the cell).
+- Transistors in a 6T SRAM cell: A 6T SRAM cell comprises two cross-coupled inverters and two access transistors for read and write operations.
+- Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type (PMOS) transistors connected in a feedback loop. They store the data bit in a latched manner.
+- Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for reading/writing) and wordlines (for selecting the cell).
  
 
 ![6TOK--2 drawio](https://github.com/Subha175/SRAM/assets/123578848/31c5b188-7ac6-4825-961f-1a9fd3880c08)
     
 
 
-- Read :-
+### Read :-
 Assume logic 0 at node (1) i.e. V1 = 0V. Therefore, M5 and M2 are OFF and M1 & M6 are ON (linear). Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
 But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.This is sensed by sense amplifier and amplified and read by data read circuit.Since V1 is increasing from 0V and it may turn on M2 if
 <br> ![B7eqrW7](https://github.com/Subha175/SRAM/assets/123578848/733df1be-70b5-4e40-9171-3283b8b524a6)
@@ -46,7 +46,7 @@ But in LHS at M3 drain and source are at high differential potential therefore n
 
 ![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
 
-- Write :-
+### Write :-
    <br> 1.Assume 1 to be stored at node 1.
    <br> 2.Therefore, M1 and M6 are OFF and M2 and M5 are ON.
    <br> 3.V1 = VDD and V2 = 0V before M2 and M4 are turned ON.
