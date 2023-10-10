@@ -14,9 +14,9 @@
   - [Row Decoder](#Row-Decoder)
   - [Data Driver](#Data-Driver)
 
-## About
-The 6T SRAM cell is one of the most common and fundamental structures used to store a single bit of data. It consists of six transistors arranged in a way that  it can hold its state as long as power is supplied.
-
+## Introduction
+SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and communication systems. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing
+periodically which makes it the most popular memory cell among VLSI designers. Hence continuous work is going on for the better performance of SRAM cells.
 ## Description
 ### Tools Used
 [Cadence Virtuoso Schematic Editor :](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-design/virtuoso-schematic-editor.html) Virtuoso is Cadence's flagship platform for custom IC design. It is often used for SRAM cell design and simulate custom circuitry, including SRAM bit-cells and peripheral circuitry.
