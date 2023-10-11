@@ -1,6 +1,6 @@
 # CMOS SRAM based on 0.18 um technology
 - 6T SRAM is a type of static random-access commonly used in modern integrated circuits for storing data.It gets its name from its basic storage cell, which consists of six transistors. These six transistors are arranged in a way that allows them to store a single binary bit of data.
-- 
+ 
 ![BLOCKDIAGRAM drawio](https://github.com/Subha175/SRAM/assets/123578848/4871e97e-d4cc-4d6b-a956-184d0272cbde)
 
 # Table of Content
