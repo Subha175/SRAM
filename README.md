@@ -52,17 +52,11 @@
 ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
 
 ### Write :-
-   <br> 1.Assume 1 to be stored at node 1.
-   <br> 2.Hence M1 and M6 are OFF and M2 and M5 are ON.
-   <br> 3.V1 = VDD and V2 = 0V before M2 and M4 are turned ON.
-   <br> 4.WL is activated; M3 and M4 are turned ON.
-   <br> 5.Since V2 < VT1, V2 cannot be used to turn ON M1.
-   <br> 6.We need to turn ON M1 so that path is created from V1 to GND and voltage at V1 will decrease to zero since path is pull down to GND.
-   <br> 7.Therefore we turn OFF M2. V1 < VT2 to turn OFF M2. When V1 = VT,n; M3 goes in linear region and M5 in saturation region.
+- Now consider the write "0" operation, assuming that a logic "1" is stored in the SRAM cell initially. Figure 10.27 shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation. The transistors M and M6 are turned off, while the transistors M2 and MS operate in the linear mode. Thus, the internal node voltages are V = VDD and V2 = 0 V before the cell access (or pass) transistors M3 and M4 are turned on. The column voltage VC is forced to logic "0" level by the data-write circuitry; thus, we may assume that Vc is approximately equal to 0 V. Once the pass transistors M3 and M4 are turned on by the row selection circuitry, we expect that the node voltage V2 remains below the threshold voltage of Ml, since M2 and M4 are designed according to condition (10.5). Consequently, the voltage level at node (2) would not be sufficient to turn on Ml. To change the stored information, i.e., to force V, to 0 V and V2 to VDD, the node voltage V, must be reduced below the threshold voltage of M2, so that M2 turns off first. When V = VT,n' the transistor M3 operates in the linear region while M5 operates in saturation.
 
 
+![writeeee5 drawio](https://github.com/Subha175/SRAM/assets/123578848/c4ecf973-e4d5-4c15-9e91-f655e5b65937)
 
-![writeckt drawio](https://github.com/Subha175/SRAM/assets/123578848/6789cba1-8c79-43f8-8393-e88a9043d09d)
 
 ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4)
 
