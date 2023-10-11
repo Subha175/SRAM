@@ -47,10 +47,12 @@
 - By taking $V_1 = 0.3$, We can find that M3 operates in saturation region while M1 operates in linear region.
   So the current equation will be ,<br>
   
-  $$Id(M1) = \frac{k_{n,1}}{2}\left(2(V_{GS} - V_{T,n})V_{DS} -V_{DS}^2\right)$$
+  $$Id(M1) = \frac{k_{n,1}}{2}(W/L)_{3}\left(2(V_{GS} - V_{T,n})V_{DS} -V_{DS}^2\right)$$
 
   $$Id(M3) = \\frac{k_{n,3}} {2}(V_{GS} - V_{T,n})^2$$
-  
+
+ - As same current will flow through M1 and M3.<br>
+ 
  
 - Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
 - But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.
