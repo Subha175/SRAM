@@ -40,8 +40,9 @@
 
 
 ### Read :-
-- Assume logic 0 at node (1) i.e. V1 = 0V.
-- Hence M5 and M2 are OFF and M1 & M6 are ON (linear).
+- Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON (linear).
+- Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
+- When M3, M4 is turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 and M1 and M3 will conduct a nonzero current and the voltage level of column BL will begin to drop slightly and the voltage 1V will increases from its initial value of 0V, where 1V is the voltage across node 1. If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the voltage 1V doesn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
 - Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
 - But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.
@@ -52,11 +53,10 @@
 ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
 
 ### Write :-
-- Now consider the write "0" operation, assuming that a logic "1" is stored in the SRAM cell initially. Figure 10.27 shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation. The transistors M and M6 are turned off, while the transistors M2 and MS operate in the linear mode. Thus, the internal node voltages are V = VDD and V2 = 0 V before the cell access (or pass) transistors M3 and M4 are turned on. The column voltage VC is forced to logic "0" level by the data-write circuitry; thus, we may assume that Vc is approximately equal to 0 V. Once the pass transistors M3 and M4 are turned on by the row selection circuitry, we expect that the node voltage V2 remains below the threshold voltage of Ml, since M2 and M4 are designed according to condition (10.5). Consequently, the voltage level at node (2) would not be sufficient to turn on Ml. To change the stored information, i.e., to force V, to 0 V and V2 to VDD, the node voltage V, must be reduced below the threshold voltage of M2, so that M2 turns off first. When V = VT,n' the transistor M3 operates in the linear region while M5 operates in saturation.
+- Now consider the write "0" operation, assuming that logic "1" is stored in the SRAM cell initially. Figure 3.2 shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation. The transistors M1 and M6 are turned off, while the transistors M2 and M5 operate in the linear mode. Thus, the internal node voltages are V1 = VDD and V2 = 0 V before the cell access (or pass) transistors M3 and M4 are turned on. The column voltage VC is forced to logic "0" level by the data-write circuitry; thus, we may assume that VC is approximately equal to 0 V. Once the pass transistors M3 and M4 are
+turned on by the row selection circuitry, we expect that the node voltage V2 remains below the threshold voltage of Ml, since M2 and M4 are designed according to condition. Consequently, the voltage level at node (2) would not be sufficient to turn on Ml. To change the stored information, i.e., to force V1, to 0 V and V2 to VDD, the node voltage V1, must be reduced below the threshold voltage of M2, so that M2 turns off first. When V = VT, the transistor M3 operates in the linear region while M5 operates in saturation.
 
-
-![writeeee5 drawio](https://github.com/Subha175/SRAM/assets/123578848/c4ecf973-e4d5-4c15-9e91-f655e5b65937)
-
+![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
 
 ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4)
 
