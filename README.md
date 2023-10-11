@@ -58,7 +58,8 @@ But in LHS at M3 drain and source are at high differential potential therefore n
 
 
 
-![write](https://github.com/Subha175/SRAM/assets/123578848/69f31245-fee0-4549-914a-cd6e39699e50)
+![writeckt drawio](https://github.com/Subha175/SRAM/assets/123578848/6789cba1-8c79-43f8-8393-e88a9043d09d)
+
 ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4)
 
 
