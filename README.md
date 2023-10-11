@@ -45,8 +45,7 @@ But in LHS at M3 drain and source are at high differential potential therefore n
 <br> ![B7eqrW7](https://github.com/Subha175/SRAM/assets/123578848/733df1be-70b5-4e40-9171-3283b8b524a6)
 <br> M3 is in saturation region and M1 is in linear region
 
-
-![Read](https://github.com/Subha175/SRAM/assets/123578848/e28dd451-9c40-4231-aad7-27a1b2e80d29)
+![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
 
 ### Write :-
    <br> 1.Assume 1 to be stored at node 1.
