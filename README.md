@@ -42,8 +42,16 @@
 ### Read :-
 - Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON (linear).
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
-- When M3, M4 is turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 and M1 and M3 will conduct a nonzero current and the voltage level of column BL will begin to drop slightly and the voltage 1V will increases from its initial value of 0V, where 1V is the voltage across node 1. If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the voltage 1V doesn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
-- Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
+- When M3, M4 is turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 and M1 and M3 will conduct a nonzero current and the voltage level of column BL will begin to drop slightly and the voltage 1V will increases from its initial value of 0V, where 1V is the voltage across node 1. If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the voltage 1V doesn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,<br>
+   &emsp; **$V1_{(max)} \leq Vth_{(M2)}-------(1)$** <br>
+- By taking $V_1 = 0.3$, We can find that M3 operates in saturation region while M1 operates in linear region.
+  So the current equation will be ,<br>
+  
+  $$Id(M1) = \frac{k_{n,1}}{2}\left(2(V_{GS} - V_{T,n})V_{DS} -V_{DS}^2\right)$$
+
+  $$Id(M3) = \\frac{k_{n,3}} {2}(V_{GS} - V_{T,n})^2$$
+  
+ 
 - Therefore, M3 and M4 are turned ON.Since for M4, drain and source are at same potential therefore no current flows here.
 - But in LHS at M3 drain and source are at high differential potential therefore non-zero current flows through M3. Path  M3 >> M1 >> GND Voltage level at BL begins to drop which results in discharging of CC capacitor which causes V1 to increase.
 - This is sensed by sense amplifier and amplified and read by data read circuit.Since V1 is increasing from 0V and it may turn on M2 if
