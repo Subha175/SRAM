@@ -56,7 +56,7 @@
  - By putting the corresponding values to determine the size of the transisitors:
  $$\frac{k_{n,3}}{2}(V_{DD} - V_1 - V_{T,n})^2 =  \frac{k_{n,1}}{2}\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
 
- $$\frac{k_{n,3}}{k_{n,1}} = \frac{(W/L)3}{(W/L)1} \leq \frac{2(V_{DD} - V_{T,n})V_1 -V_1^2}{V_{DD} - V_{T,n}^2} ---------(3)$$ 
+ $$\frac{k_{n,3}}{k_{n,1}} = \frac{(W/L)3}{(W/L)1} \leq \frac{2(V_{DD} - V_{T,n})V_1 -V_1^2}{(V_{DD} - V_1 - V_{T,n})^2} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
  $$\frac{(W/L)_3}{(W/L)_1} \leq \frac{2(1.8 - 0.67)0.3 -0.3^2}{1.8 - 0.67^2}$$
  $$\frac{(W/L)_3}{(W/L)_1} \leq 0.85$$
@@ -76,11 +76,12 @@
  $$Id(M5) = \frac{k_{p,5}} {2} (\frac{W}{L}) (V_{GS} - V_{T,p})^2$$
  Since, $Id(M5) = Id(M3) -----------(1)$
  - By putting the corresponding values to determine the size of the transisitors:
- $$\frac{k_{n,3}}{2}(\frac{W}{L})(V_{DD} - V_1 - V_{T,n})^2 =  \frac{k_{n,1}}{2}(\frac{W}{L})\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
+ $$\frac{k_{p,5}}{2}(\frac{W}{L})(V_{DD} - V_1 - V_{T,n})^2 =  \frac{k_{n,3}}{2}(\frac{W}{L})\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
 
  $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3}{2(V_{DD} - V_{T,n})V_1 -V_1^2}}{k_{p,5}{V_{DD} - V_{T,n}^2}} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
- $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{1.8 - 0.67^2}}$$ 
+ $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{1.8 - 0.67^2}}$$
+ $$\frac{(W/L)_3}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67^2)}}$$ 
  
 
 ![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
