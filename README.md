@@ -85,8 +85,8 @@
 
  $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3}{2(V_{DD} - V_{T,n})V_1 -V_1^2}}{k_{p,5}{V_{DD} - V_{T,n}^2}} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
- $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{1.8 - 0.67^2}}$$
- $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67^2)}}$$ 
+ $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{(1.8 - 0.67)^2}}$$
+ $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67)^2}}$$ 
  
 
 ![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
@@ -101,6 +101,8 @@
 The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
 
 ![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
+![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064)
+
 
 
 
