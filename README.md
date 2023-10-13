@@ -7,7 +7,7 @@
 # Table of Content
 - [Introduction](#Introduction)
 - [Description](#Description) 
-- [Design](#Design)
+- [SRAM Circuit](#SRAM Circuit)
   - [6T-SRAM Cell](#6T-SRAM-Cell)
     -  [Read](#Read)
     -  [Write](#Write)
@@ -16,6 +16,8 @@
   - [Sense Amplifier](#sense-amplifier)
   - [Row Decoder](#Row-Decoder)
   - [Data Driver](#Data-Driver)
+- [Schematic Design](#Schematic_Design)
+- [Testbench](#Testbench)
 - [Result](#Result)
 
 # Introduction
