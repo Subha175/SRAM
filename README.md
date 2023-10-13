@@ -59,7 +59,7 @@
 
  $$\frac{k_{n,3}}{k_{n,1}} = \frac{(W/L)3}{(W/L)1} \leq \frac{2(V_{DD} - V_{T,n})V_1 -V_1^2}{(V_{DD} - V_1 - V_{T,n})^2} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
- $$\frac{(W/L)_3}{(W/L)_1} \leq \frac{2(1.8 - 0.67)0.3 -0.3^2}{1.8 - 0.67^2}$$
+ $$\frac{(W/L)_3}{(W/L)_1} \leq \frac{2(1.8 - 0.67)0.3 -0.3^2}{(1.8 - 0.67)^2}$$
  $$\frac{(W/L)_3}{(W/L)_1} \leq 0.85$$
  $${(W/L)_1} \leq 1.176{(W/L)_3}$$
 
@@ -82,7 +82,7 @@
  $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3}{2(V_{DD} - V_{T,n})V_1 -V_1^2}}{k_{p,5}{V_{DD} - V_{T,n}^2}} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
  $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{1.8 - 0.67^2}}$$
- $$\frac{(W/L)_3}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67^2)}}$$ 
+ $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67^2)}}$$ 
  
 
 ![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
@@ -119,6 +119,8 @@ The driver circuit also known as a write driver is one of the basic components i
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
 
 # Result
+![finallllll](https://github.com/Subha175/SRAM/assets/123578848/baeb3034-11e2-40be-80b5-d5bf70517c5c)
+
 
 
 
