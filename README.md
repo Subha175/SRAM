@@ -166,6 +166,8 @@ The driver circuit also known as a write driver is one of the basic components i
 ![testbencghoverall](https://github.com/Subha175/SRAM/assets/123578848/1cce0c78-545f-4600-ada2-5c70df668ae8)
 
 # Result
+![kuchvabcd drawio](https://github.com/Subha175/SRAM/assets/123578848/fe4e1f12-11ef-4e1e-8f46-dbb3a5f849a3)
+
 ![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd)
 
 
