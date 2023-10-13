@@ -7,7 +7,7 @@
 # Table of Content
 - [Introduction](#Introduction)
 - [Description](#Description) 
-- [SRAM Circuit](#SRAM Circuit)
+- [SRAM Circuit](#SRAM_Circuit)
   - [6T-SRAM Cell](#6T-SRAM-Cell)
     -  [Read](#Read)
     -  [Write](#Write)
@@ -101,7 +101,7 @@
 The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
 
 ![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
-![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3)
+
 
 
 
@@ -111,6 +111,8 @@ The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a
 - Sense Amplifier is the most critical circuits in the periphery of CMOS memory. The performance of SA’s strongly affects both memory access time, and overall memory power dissipation. CMOS memories are required to increase speed, improve capacity and maintain low power dissipation. These ob-jectives are somewhat conflicting when it comes to sense amplifier in memories. With increased memory capacity usually comes increased bit line parasitic capacitance. This increased bit-line capacitance in turn slows down voltage sensing and makes bit-line capacitance swings energy expensive resulting in slower more energy hungry memories. Due to their great importance in memory performance sense amplifiers have become a very large class of circuits. Their main function is to sense or detect stored data from a read-selected memory cell.
 
 ![salast drawio](https://github.com/Subha175/SRAM/assets/123578848/3c9fb618-9602-4416-959d-4b3469c3d711)
+![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3)
+
 
 ## Row Decoder 
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
@@ -121,6 +123,8 @@ A row decoder in SRAM is responsible for selecting and activating the wordline a
 ## Data Driver
 The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable signal is enabled; otherwise, the data is not written onto the bit-lines.
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
+
+# Schematic Design
 
 # Result
 ![finallllll](https://github.com/Subha175/SRAM/assets/123578848/baeb3034-11e2-40be-80b5-d5bf70517c5c)
