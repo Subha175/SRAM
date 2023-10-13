@@ -2,7 +2,9 @@
 - Static Random Access Memory(SRAM) is a type of memory that uses flipflops to store each bit. It retains data bits in its memory as long as power is being supplied. SRAM does not have to be periodically refreshed and it provides faster access to data compared to DRAM. The sizing of transistors in SRAM cell denotes to the alternation in transistor width to satisfy the conditions for reading and writing operations.
 
 ![BLOCKDIAGRAM-FINALPage-3 drawio](https://github.com/Subha175/SRAM/assets/123578848/b969ed19-2890-4a11-be20-15dc98af4f33)
-
+<p align="Center">
+  Fig 1:Block Diagram of SRAM
+</p>
 
 # Table of Content
 - [Introduction](#Introduction)
