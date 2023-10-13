@@ -43,6 +43,10 @@
  
 
 ![6TOK--2 drawio](https://github.com/Subha175/SRAM/assets/123578848/31c5b188-7ac6-4825-961f-1a9fd3880c08)
+<p align="Center">
+  Fig 2:6T-SRAM Cell
+</p>
+
     
 
 
@@ -71,6 +75,10 @@
 
 
 ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
+<p align="Center">
+  Fig 3:Read Circuit
+</p>
+
 ![readgrapgh](https://github.com/Subha175/SRAM/assets/123578848/168a31e5-b0d0-44c0-a39e-269090946989)
 
 
