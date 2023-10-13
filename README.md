@@ -4,7 +4,7 @@
 ![BLOCKDIAGRAM drawio](https://github.com/Subha175/SRAM/assets/123578848/4871e97e-d4cc-4d6b-a956-184d0272cbde)
 
 # Table of Content
-- [About](#About)
+- [Introduction](#Introduction)
 - [Description](#Description) 
 - [Design](#Design)
   - [6T-SRAM Cell](#6T-SRAM-Cell)
@@ -15,13 +15,14 @@
   - [Sense Amplifier](#sense-amplifier)
   - [Row Decoder](#Row-Decoder)
   - [Data Driver](#Data-Driver)
+- [Result](#Result)
 
-## Introduction
+# Introduction
 - SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain data. This memory cell has become a subject of research to meet the demands for future digital electronics and  communication system. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous workis going on for the better performance of SRAM cells. Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1. Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors M5 and M6. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
 
 
 
-## Description
+# Description
 ### Tools Used
 - [Cadence Virtuoso Schematic Editor :](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-design/virtuoso-schematic-editor.html) Virtuoso is Cadence's flagship platform for custom IC design. It is often used for SRAM cell design and simulate custom circuitry, including SRAM bit-cells and peripheral circuitry.
 
@@ -116,6 +117,8 @@ A row decoder in SRAM is responsible for selecting and activating the wordline a
 ## Data Driver
 The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable signal is enabled; otherwise, the data is not written onto the bit-lines.
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
+
+# Result
 
 
 
