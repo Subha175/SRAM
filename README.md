@@ -129,9 +129,12 @@ The driver circuit also known as a write driver is one of the basic components i
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
 
 # Schematic Design
+##SRAM
+
 
 # Result
-![finallllll](https://github.com/Subha175/SRAM/assets/123578848/baeb3034-11e2-40be-80b5-d5bf70517c5c)
+![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd)
+
 
 
 
