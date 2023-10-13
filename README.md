@@ -132,23 +132,37 @@ The driver circuit also known as a write driver is one of the basic components i
 ## SRAM
 ![insidesramtop](https://github.com/Subha175/SRAM/assets/123578848/dc52fa05-826a-44b7-a330-9cfa2f68ccd2)
 
-## SRAM_6T Block
+## 6T_SRAM Block
+![sram6tdesign](https://github.com/Subha175/SRAM/assets/123578848/b4d616b0-36f3-4b09-ae64-26af2abf95e3)
 
 
 ## Pre-Charge Block
+![pcdeign](https://github.com/Subha175/SRAM/assets/123578848/29ead06a-5150-4433-b05f-881fa211302a)
 
 
 ## Sense-Amplifier Block
+![senseampdesign](https://github.com/Subha175/SRAM/assets/123578848/93e12196-697f-43f6-83eb-aa56cd37c158)
 
 ## Write-Driver Block
+![dindriverdesign](https://github.com/Subha175/SRAM/assets/123578848/f8fac4fd-2d87-4d03-b33a-1835cd580d54)
 
 ## RWN(Read-Write Enable)-Block
+![rwndesign](https://github.com/Subha175/SRAM/assets/123578848/a685b321-ca9a-4fdb-92c2-8555476aa504)
 
 ## Row-Decoder Block
+![rowdecoderdesign](https://github.com/Subha175/SRAM/assets/123578848/c5b8a6d3-2369-4cc6-882e-7fc1f094c165)
 
+## Testbench of SRAM
+![testbencghoverall](https://github.com/Subha175/SRAM/assets/123578848/1cce0c78-545f-4600-ada2-5c70df668ae8)
 
 # Result
 ![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd)
+
+
+
+
+
+
 
 
 
