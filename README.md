@@ -69,6 +69,8 @@
 
 
 ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
+![readgrapgh](https://github.com/Subha175/SRAM/assets/123578848/168a31e5-b0d0-44c0-a39e-269090946989)
+
 
 ### Write :-
 - Now consider the write "0" operation, assuming that logic "1" is stored in the SRAM cell initially.
