@@ -118,8 +118,8 @@
  
 
 ## Pre-Charge Circuit 
-The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. In the pre-charge phase, both bitlines are set to a logic high or low level, depending on the SRAM cell's design.
-
+The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. During read and write operations, SRAM cells are accessed via bitlines. By precharging we ensure that the bitlines are not left floating or in unknown state, which can lead to incorrect data  
+retriveal or corruption. Here we are using  PMOS in precharge so when the PC signal is low, then the BL and BLB's capacitors will charged.
 ![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
 ![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064)
 
