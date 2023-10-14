@@ -1,4 +1,4 @@
-# CMOS SRAM based on 0.18 um technology
+# CMOS SRAM based on 0.18 μm technology
 - Static Random Access Memory(SRAM) is a type of memory that uses flipflops to store each bit. It retains data bits in its memory as long as power is being supplied. SRAM does not have to be periodically refreshed and it provides faster access to data compared to DRAM. The sizing of transistors in SRAM cell denotes to the alternation in transistor width to satisfy the conditions for reading and writing operations.
 
 ![BLOCKDIAGRAM-FINALPage-3 drawio](https://github.com/Subha175/SRAM/assets/123578848/b969ed19-2890-4a11-be20-15dc98af4f33)
@@ -93,12 +93,14 @@
  $$Id(M5) = \frac{k_{p,5}} {2} (\frac{W}{L}) (V_{GS} - V_{T,p})^2$$
  Since, $Id(M5) = Id(M3) -----------(1)$
  - By putting the corresponding values to determine the size of the transisitors:
- $$\frac{k_{p,5}}{2}(\frac{W}{L})(V_{DD} - V_1 - V_{T,n})^2 =  \frac{k_{n,3}}{2}(\frac{W}{L})\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
+ $$\frac{k_{p,5}}{2}(\frac{W}{L})(0 - V_{DD} - V_{T,p})^2 =  \frac{k_{n,3}}{2}(\frac{W}{L})\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
 
- $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3}{2(V_{DD} - V_{T,n})V_1 -V_1^2}}{k_{p,5}{V_{DD} - V_{T,n}^2}} ---------(3)$$ 
+ $$\frac{(W/L)5}{(W/L)3} \leq \frac{μ_n {2(V_{DD} - V_{T,n})V_1 -V_1^2}}{μ_p{(V_{DD} - V_{T,p})^2}} ---------(3)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
- $$\frac{(W/L)}{(W/L)} \leq \frac{k_{n,3} \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{5 \cdot k_{n,3}{(1.8 - 0.67)^2}}$$
- $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67)^2}}$$ 
+ $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{5 \cdot μ_p  \cdot {2(1.8 - 0.67)0.3 -0.3^2}}{μ_p {(1.8 - 0.67)^2}}$$
+ $$\frac{(W/L)_5}{(W/L)_3} \leq \frac{{2(1.8 - 0.67)0.3 -0.3^2}}{5{(1.8 - 0.67)^2}}$$
+ $$\frac{(W/L)_5}{(W/L)_3} \leq 2.36$$
+ $${(W/L)_5} \leq 2.36{(W/L)_3}$$
  
 
 ![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
