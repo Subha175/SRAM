@@ -50,7 +50,10 @@
     
 
 
-### Read :-
+### Read Operation :-
+
+![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
+
 - Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON (linear).
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
 - When M3, M4 is turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 and M1 and M3 will conduct a nonzero current and the voltage level of column BL will begin to drop slightly and the voltage 1V will increases from its initial value of 0V, where 1V is the voltage across node 1. If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the voltage 1V doesn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
@@ -74,15 +77,15 @@
  $${(W/L)_1} \leq 1.176{(W/L)_3}$$
 
 
-![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
-<p align="Center">
-  Fig 3:Read Circuit
-</p>
+
 
 ![readgrapgh](https://github.com/Subha175/SRAM/assets/123578848/168a31e5-b0d0-44c0-a39e-269090946989)
 
 
-### Write :-
+### Write Operation:-
+
+![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
+
 - Now consider the write "0" operation, assuming that logic "1" is stored in the SRAM cell initially.
 - Below figure shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation.
 - The transistors M1 and M6 are turned off, while the transistors M2 and M5 operate in the linear mode. Thus, the internal node voltages are V1 = VDD and V2 = 0V  before the pass transistors M3 and M4 are turned on. The column voltage VC is forced to logic "0" level by the data-write circuitry; thus, we may assume that VC  is approximately equal to 0 V.
@@ -103,7 +106,7 @@
  $${(W/L)_5} \leq 2.36{(W/L)_3}$$
  
 
-![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
+
 
 ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4)
 
