@@ -26,7 +26,8 @@
 - [Result](#Result)
 
 # Introduction
-- SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain datA. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous workis going on for the better performance of SRAM cells. Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1. Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
+- SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain datA. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous workis going on for the better performance of SRAM cells.
+- Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1. Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
 
 
 
@@ -118,7 +119,8 @@
  
 
 ## Pre-Charge Circuit 
-The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data. During read and write operations, SRAM cells are accessed via bitlines. By precharging we ensure that the bitlines are not left floating or in unknown state, which can lead to incorrect data  
+- The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data.
+- During read and write operations, SRAM cells are accessed via bitlines. By precharging we ensure that the bitlines are not left floating or in unknown state, which can lead to incorrect data  
 retriveal or corruption. Here we are using  PMOS in precharge so when the PC signal is low, then the BL and BLB's capacitors will charged.
 ![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
 ![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064)
