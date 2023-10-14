@@ -173,7 +173,8 @@ The driver circuit also known as a write driver is one of the basic components i
 # Result
 
 ## Process Corner Analysis
-![kuchvabcd drawio](https://github.com/Subha175/SRAM/assets/123578848/fe4e1f12-11ef-4e1e-8f46-dbb3a5f849a3)
+![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87)
+
 
 ## Read/Write Operation
 ![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd)
