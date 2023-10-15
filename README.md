@@ -89,7 +89,7 @@
 
 ![readgrapgh](https://github.com/Subha175/SRAM/assets/123578848/168a31e5-b0d0-44c0-a39e-269090946989)
 | :---: | 
-| Timing Diagram of Read Operation |
+| Fig 3.1: Timing Diagram of Read Operation |
 
 
 ### Write Operation:-
@@ -122,7 +122,7 @@
 
 | ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4) |
 | :---: | 
-| Timing Diagram of Write Operation |
+| Fig 4.1: Timing Diagram of Write Operation |
 
 
 
@@ -140,7 +140,7 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 
 | ![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064) |
 | :---: | 
-| Timing Diagram of Pre-Charge Circuit |
+| Fig 5.1: Timing Diagram of Pre-Charge Circuit |
 
 
 
@@ -157,7 +157,7 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 
 | ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3) |
 | :---: | 
-| Timing Digram of Sense Amplifier |
+| Fig 6.1: Timing Digram of Sense Amplifier |
 
 
 
