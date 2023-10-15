@@ -48,18 +48,17 @@
 - Cross-Coupled Inverters: These are composed of two n-type (NMOS) and two p-type (PMOS) transistors connected in a feedback loop. They store the data bit in a latched manner.
 - Access Transistors: These are used to control the read and write operations. The access transistors connect the cross-coupled inverters to the bitlines (for reading/writing) and wordlines (for selecting the cell).
  
-
-![6TOK--2 drawio](https://github.com/Subha175/SRAM/assets/123578848/31c5b188-7ac6-4825-961f-1a9fd3880c08)
-<p align="Center">
-  Fig 2:6T-SRAM Cell
-</p>
-
+| ![6TOK--2 drawio](https://github.com/Subha175/SRAM/assets/123578848/31c5b188-7ac6-4825-961f-1a9fd3880c08) | 
+| :---: | 
+| Fig 2: 6T-SRAM Cell |
     
 
 
 ### Read Operation :-
 
-![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
+| ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c) | 
+| :---: | 
+| Fig 3: Read Operation |
 
 - Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON.
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
@@ -89,11 +88,15 @@
 
 
 ![readgrapgh](https://github.com/Subha175/SRAM/assets/123578848/168a31e5-b0d0-44c0-a39e-269090946989)
+| :---: | 
+| Timing Diagram of Read Operation |
 
 
 ### Write Operation:-
 
-![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b)
+| ![writeFINAL-Page-5 drawio](https://github.com/Subha175/SRAM/assets/123578848/84dfe164-9d63-4681-9f04-017a7bf7eb8b) | 
+| :---: | 
+| Fig 4: Write Operation |
 
 - Now consider the write "0" operation, assuming that logic "1" is stored in the SRAM cell initially.
 - Below figure shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation.
@@ -117,7 +120,9 @@
 
 
 
-![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4)
+| ![write_op](https://github.com/Subha175/SRAM/assets/123578848/b1138298-ff85-43b1-8c30-e49bc9d672b4) |
+| :---: | 
+| Timing Diagram of Write Operation |
 
 
 
@@ -127,8 +132,15 @@
 - The pre-charge circuit is responsible for setting the bitlines (BL and BLB) to a stable state before reading or writing data.
 - During read and write operations, SRAM cells are accessed via bitlines. By precharging we ensure that the bitlines are not left floating or in unknown state, which can lead to incorrect data  
 retriveal or corruption. Here we are using  PMOS in precharge so when the PC signal is low, then the BL and BLB's capacitors will charged.
-![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e)
-![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064)
+
+| ![PCFINALhai drawio](https://github.com/Subha175/SRAM/assets/123578848/ebb70987-8ed4-437c-9bd9-43b1b555a25e) | 
+| :---: | 
+| Fig 5: Pre-Charge Circuit |
+
+
+| ![pcfinalgraph](https://github.com/Subha175/SRAM/assets/123578848/45bbdc84-9d67-4f50-ac7b-32b4294c9064) |
+| :---: | 
+| Timing Diagram of Pre-Charge Circuit |
 
 
 
@@ -139,55 +151,89 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 
 - Sense Amplifier is the most critical circuits in the periphery of CMOS memory. The performance of SA’s strongly affects both memory access time, and overall memory power dissipation. CMOS memories are required to increase speed, improve capacity and maintain low power dissipation. These ob-jectives are somewhat conflicting when it comes to sense amplifier in memories. With increased memory capacity usually comes increased bit line parasitic capacitance. This increased bit-line capacitance in turn slows down voltage sensing and makes bit-line capacitance swings energy expensive resulting in slower more energy hungry memories. Due to their great importance in memory performance sense amplifiers have become a very large class of circuits. Their main function is to sense or detect stored data from a read-selected memory cell.
 
-![salast drawio](https://github.com/Subha175/SRAM/assets/123578848/3c9fb618-9602-4416-959d-4b3469c3d711)
-![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3)
+| ![salast drawio](https://github.com/Subha175/SRAM/assets/123578848/3c9fb618-9602-4416-959d-4b3469c3d711) |
+| :---: | 
+| Fig 6: Sense Amplifier |
+
+| ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3) |
+| :---: | 
+| Timing Digram of Sense Amplifier |
+
 
 
 ## Row Decoder 
 A row decoder in SRAM is responsible for selecting and activating the wordline associated with a specific row of memory cells, allowing read and write operations to be performed on that row. The efficient operation of the row decoder is essential for the overall performance and power efficiency of the SRAM memory.
 
 ![ROWDecoderFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/447cc346-2ba8-453d-86a6-42cb292a6446)
-
+| :---: | 
+| Fig 7: Row Decoder |
 
 ## Data Driver
 The driver circuit also known as a write driver is one of the basic components in the memory design circuit. The job of the driver is to bring the bit-line and bit-line bar to the ground potential which are initially being charged to maximum supply voltage VDD with pre-charge circuit. The driver gets enabled by the write enable signal. The function of the SRAM write driver is to write input data to the bit-lines when Write Enable signal is enabled; otherwise, the data is not written onto the bit-lines.
+
 ![DINdriver drawio](https://github.com/Subha175/SRAM/assets/123578848/53c93292-2c81-49f6-ab6f-6db0cc909c57)
+| :---: | 
+| Fig 8: Data Driver |
 
 # Schematic Design
 ## SRAM
-![insidesramtop](https://github.com/Subha175/SRAM/assets/123578848/dc52fa05-826a-44b7-a330-9cfa2f68ccd2)
+| ![insidesramtop](https://github.com/Subha175/SRAM/assets/123578848/dc52fa05-826a-44b7-a330-9cfa2f68ccd2) |
+| :---: | 
+| 16-byte SRAM |
+
 
 ## 6T_SRAM Block
-![sram6tdesign](https://github.com/Subha175/SRAM/assets/123578848/b4d616b0-36f3-4b09-ae64-26af2abf95e3)
+| ![sram6tdesign](https://github.com/Subha175/SRAM/assets/123578848/b4d616b0-36f3-4b09-ae64-26af2abf95e3) |
+| :---: | 
+| 6T-SRAM Cell |
 
 
 ## Pre-Charge Block
-![pcdeign](https://github.com/Subha175/SRAM/assets/123578848/29ead06a-5150-4433-b05f-881fa211302a)
-
+| ![pcdeign](https://github.com/Subha175/SRAM/assets/123578848/29ead06a-5150-4433-b05f-881fa211302a) |
+| :---: | 
+| 8-bit Pre-Chrage Circuit |
 
 ## Sense-Amplifier Block
-![senseampdesign](https://github.com/Subha175/SRAM/assets/123578848/93e12196-697f-43f6-83eb-aa56cd37c158)
+| ![senseampdesign](https://github.com/Subha175/SRAM/assets/123578848/93e12196-697f-43f6-83eb-aa56cd37c158) |
+| :---: | 
+| 8-bit Sense Amplifier |
 
 ## Write-Driver Block
-![dindriverdesign](https://github.com/Subha175/SRAM/assets/123578848/f8fac4fd-2d87-4d03-b33a-1835cd580d54)
+| ![dindriverdesign](https://github.com/Subha175/SRAM/assets/123578848/f8fac4fd-2d87-4d03-b33a-1835cd580d54) |
+| :---: | 
+| 8-bit Write-Driver |
 
 ## RWN(Read-Write Enable)-Block
-![rwndesign](https://github.com/Subha175/SRAM/assets/123578848/a685b321-ca9a-4fdb-92c2-8555476aa504)
+| ![rwndesign](https://github.com/Subha175/SRAM/assets/123578848/a685b321-ca9a-4fdb-92c2-8555476aa504) |
+| :---: | 
+| Read - Write Enable |
 
 ## Row-Decoder Block
-![rowdecoderdesign](https://github.com/Subha175/SRAM/assets/123578848/c5b8a6d3-2369-4cc6-882e-7fc1f094c165)
+| ![rowdecoderdesign](https://github.com/Subha175/SRAM/assets/123578848/c5b8a6d3-2369-4cc6-882e-7fc1f094c165) |
+| :---: | 
+| 4x16 Row Decoder |
+
 
 ## Testbench of SRAM
-![testbencghoverall](https://github.com/Subha175/SRAM/assets/123578848/1cce0c78-545f-4600-ada2-5c70df668ae8)
+| ![testbencghoverall](https://github.com/Subha175/SRAM/assets/123578848/1cce0c78-545f-4600-ada2-5c70df668ae8) |
+| :---: | 
+| 16-byte SRAM testbench |
+
 
 # Result
 
 ## Process Corner Analysis
-![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87)
+| ![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87) |
+| :---: | 
+| Delays in SRAM |
+
 
 
 ## Read/Write Operation
-![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd)
+| ![finalllfinalll](https://github.com/Subha175/SRAM/assets/123578848/787fd61b-62c4-4046-9dea-3f206bf1e9bd) |
+| :---: | 
+| SRAM RD/WR |
+
 
 
 
