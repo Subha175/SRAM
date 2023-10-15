@@ -156,6 +156,15 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 | :---: | 
 | Fig 6: Sense Amplifier |
 
+| ![INVERTER drawio](https://github.com/Subha175/SRAM/assets/123578848/dc8f4c37-7b83-4bd6-915d-8da38d1c5b73) |
+| :---: | 
+| Sizing of Inverters |
+
+| ![transistoWDLENGTHr-Page-1 drawio](https://github.com/Subha175/SRAM/assets/123578848/8aaf990f-596f-4cb1-a341-e082883a081e) |
+| :---: | 
+| Sizing of transistors in Sense-Amplifier |
+
+
 | ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3) |
 | :---: | 
 | Fig 6.1: Timing Digram of Sense Amplifier |
