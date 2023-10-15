@@ -39,6 +39,7 @@
 - [Cadence Spectre Circuit Stimulator :](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-fmc-analysis.html?utm_campaign=Custom_Virtuoso_Studio_product_eu_google_search_june_2023&utm_source=google&utm_medium=search&utm_content=cdn_paid_media&utm_content=Circuit_Simulation&s_kwcid=AL!14272!3!662289232220!b!!g!!circuit%20simulation&gad=1&gclid=Cj0KCQjwpompBhDZARIsAFD_Fp8Z-SxLLihhZBFwTmCU69lX0z8FEUvoFW2uLaLdkUzkxbE_Gtb2_GUaAi4xEALw_wcB) Spectre is Cadence's analog and mixed-signal simulation tool. It is used for simulating the SRAM cell to ensure that it operates correctly under various conditions and meets performance specifications.
 
 # Specification
+- Menory Size ------------> 16-Byte
 - Supply Voltage --------> 1.8 V
 - Operatimg Frequency ----> 50 MHz
   
@@ -62,9 +63,11 @@
 
 ![READCKT drawio](https://github.com/Subha175/SRAM/assets/123578848/b3f818c9-64ea-49a7-b6b3-6ade26ec437c)
 
-- Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON (linear).
+- Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON.
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
-- When M3, M4 is turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 and M1 and M3 will conduct a nonzero current and the voltage level of column BL will begin to drop slightly and the voltage 1V will increases from its initial value of 0V, where 1V is the voltage across node 1. If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the voltage 1V doesn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
+- When the access transistors (M3, M4) are turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 butthe node voltage of V1 will start increasing and the voltage level of column BL will begin to drop slightly i.e C is discharging through  M3 and M1 .
+- If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the node voltage at V1 shouldn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
+  
    &emsp; **$V1_{(max)} \leq Vth_{(M2)}-------(1)$** <br>
 - By taking $V_1 = 0.3$, We can find that M3 operates in saturation region while M1 operates in linear region.
   So the current equation will be ,<br>
@@ -74,15 +77,15 @@
   $$Id(M3) = \frac{k_{n,3}} {2} (\frac{W}{L}) (V_{GS} - V_{T,n})^2$$
 
  - As same current will flow through M1 and M3.<br>
- So, $Id(M3) = Id(M1) -----------(2)$
+ So, $Id(M3) = Id(M1)$
  - By putting the corresponding values to determine the size of the transisitors:
  $$\frac{k_{n,3}}{2}(V_{DD} - V_1 - V_{T,n})^2 =  \frac{k_{n,1}}{2}\left(2(V_{DD} - V_{T,n})V_1 - V_1^2\right)$$
 
- $$\frac{k_{n,3}}{k_{n,1}} = \frac{(W/L)3}{(W/L)1} \leq \frac{2(V_{DD} - V_{T,n})V_1 -V_1^2}{(V_{DD} - V_1 - V_{T,n})^2} ---------(3)$$ 
+ $$\frac{k_{n,3}}{k_{n,1}} = \frac{(W/L)3}{(W/L)1} \leq \frac{2(V_{DD} - V_{T,n})V_1 -V_1^2}{(V_{DD} - V_1 - V_{T,n})^2} ---------(2)$$ 
  - By putting the corresponding values of $V_{T,n} = 0.67V$ and $V_1 = 0.3V$,
  $$\frac{(W/L)_3}{(W/L)_1} \leq \frac{2(1.8 - 0.67)0.3 -0.3^2}{(1.8 - 0.67)^2}$$
  $$\frac{(W/L)_3}{(W/L)_1} \leq 0.85$$
- $${(W/L)_1} \leq 1.176{(W/L)_3}$$
+ $${(W/L)_1} \leq 1.176{(W/L)_3}$$ ------------------------(3)$$
 
 
 
@@ -97,7 +100,7 @@
 - Now consider the write "0" operation, assuming that logic "1" is stored in the SRAM cell initially.
 - Below figure shows the voltage levels in the CMOS SRAM cell at the beginning of the data-write operation.
 - The transistors M1 and M6 are turned off, while the transistors M2 and M5 operate in the linear mode. Thus, the internal node voltages are V1 = VDD and V2 = 0V  before the pass transistors M3 and M4 are turned on. The column voltage VC is forced to logic "0" level by the data-write circuitry; thus, we may assume that VC  is approximately equal to 0 V.
-- Once the pass transistors M3 and M4 are turned on by the row selection circuitry, we expect that the node voltage V2 remains below the threshold voltage of Ml, since M2 and M4 are designed according to condition. Consequently, the voltage level at node (2) would not be sufficient to turn on Ml. To change the stored information, i.e., to force V1, to 0 V and V2 to VDD, the node voltage V1, must be reduced below the threshold voltage of M2, so that M2 turns off first. When V = VT, the transistor M3 operates in the linear region while M5 operates in saturation.
+- Once the pass transistors M3 and M4 are turned on by the row selection circuitry, we expect that the node voltage V2 remains below the threshold voltage of Ml, since M2 and M4 are designed according to condition(3). Consequently, the voltage level at node (2) would not be sufficient to turn on Ml. To change the stored information, i.e., to force V1, to 0 V and V2 to VDD, the node voltage V1, must be reduced below the threshold voltage of M2, so that M2 turns off first. When $$V_1 \leq (Vth)_M2$$ , the transistor M3 operates in the linear region while M5 operates in saturation.
 - So the current equation will be ,<br>
  $$Id(M3) = \frac{k_{n,3}}{2} (\frac{W}{L}) \left(2(V_{GS} - V_{T,n})V_{DS} -V_{DS}^2\right)$$
 
