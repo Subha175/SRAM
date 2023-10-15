@@ -23,7 +23,8 @@
 - [Schematic Design](#Schematic_Design)
 - [Testbench](#Testbench)
 - [Result](#Result)
-
+  - [Process Corner Analysis](#Process_Corner_Analysis)
+  - [SRAM RD/WR](#SRAM_RD/WR)
 # Introduction
 - SRAM (Static Random-Access Memory) is a memory component and is used in various VLSI chips due to its unique capability to retain datA. SRAM is a major data storage device due to its large storage density, less time to access and consumes less power. It does not require refreshing periodically which makes it the most popular memory cell among VLSI designers. Hence continuous workis going on for the better performance of SRAM cells.
 - Each bit in SRAM is stored on two cross-coupled inverters formed by four transistors and has two stable states which are used to denote 0 and 1. Two additional access transistors serve to control a storage cell during reading and writing operations. Access to the cell is enabled by the word-line which controls the two access transistors. The cell also has two bit-lines that control both the input and output of the data from the cell. The bit-line, holds the same value that is stored in the cell and bit-line bar or bit-line not, holds the inverse of the value that is stored in the cell.
