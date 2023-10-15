@@ -236,7 +236,7 @@ The driver circuit also known as a write driver is one of the basic components i
 
 ## Read/Write Operation
 
-| ![DATATABLE drawio](https://github.com/Subha175/SRAM/assets/123578848/2cae83fb-5be9-4355-b3d9-63d3a376f43a) |
+| ![FINALTABLE drawio (3)](https://github.com/Subha175/SRAM/assets/123578848/3aa86b64-6439-47dc-8b57-cdec178d6e16) |
 | :---: | 
 | Variables |
 
