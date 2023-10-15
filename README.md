@@ -3,9 +3,9 @@
 
 ![BLOCKDIAGRAM-FINALPage-3 drawio](https://github.com/Subha175/SRAM/assets/123578848/b969ed19-2890-4a11-be20-15dc98af4f33)
 
-|              ![BLOCKDIAGRAM-FINALPage-3 drawio](https://github.com/Subha175/SRAM/assets/123578848/b969ed19-2890-4a11-be20-15dc98af4f33)                       | 
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-|                                                           Fig 1: Block Diagram of SRAM                                                                        |
+| ![BLOCKDIAGRAM-FINALPage-3 drawio](https://github.com/Subha175/SRAM/assets/123578848/b969ed19-2890-4a11-be20-15dc98af4f33) | 
+| :---: | 
+| Fig 1: Block Diagram of SRAM |
 
 
 
