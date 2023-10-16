@@ -62,7 +62,7 @@
 | :---: | 
 | Fig 3: Read Operation |
 
-- Assume logic 0 at node (1) i.e. V1 = 0V. Hence M5 and M2 are OFF and M1 & M6 are ON.
+- Assume logic 0 at node (1) i.e. V1 = 0V (FIG.3). Hence M5 and M2 are OFF and M1 & M6 are ON.
 - Therefore V1 = 0V and V2 = VDD. Word line is activated and data lines CC is pre-changed to VDD.
 - When the access transistors (M3, M4) are turned on the voltage level of column BLB will not show any significant variation since no current will flow through M4 butthe node voltage of V1 will start increasing and the voltage level of column BL will begin to drop slightly i.e C is discharging through  M3 and M1 .
 - If W/L ratio of access transistor M3 is large compared to the ratio of M1, the node voltage V1 may exceed the threshold voltage of M2 during this process, forcing an unintended change of the stored state. The key design issue for the data read operation is then to guararantee that the node voltage at V1 shouldn’t exceed the threshold voltage of M2 ,so that M2 remains turned off during the read phase i.e.,
