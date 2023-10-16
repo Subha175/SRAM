@@ -153,7 +153,7 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 
 - Sense Amplifier is the most critical circuits in the periphery of CMOS memory. The performance of SA’s strongly affects both memory access time, and overall memory power dissipation. CMOS memories are required to increase speed, improve capacity and maintain low power dissipation. These ob-jectives are somewhat conflicting when it comes to sense amplifier in memories. With increased memory capacity usually comes increased bit line parasitic capacitance. This increased bit-line capacitance in turn slows down voltage sensing and makes bit-line capacitance swings energy expensive resulting in slower more energy hungry memories. Due to their great importance in memory performance sense amplifiers have become a very large class of circuits. Their main function is to sense or detect stored data from a read-selected memory cell.
 
-| ![sensefinaldrawio](https://github.com/Subha175/SRAM/assets/123578848/2dccc728-e5c0-476b-9272-d28e56a6c6a3) |
+| ![OKSAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/759bc195-05ba-4f96-bf9a-25d45a091245) |
 | :---: | 
 | Fig 6: Sense Amplifier |
 
