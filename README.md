@@ -153,22 +153,24 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
 
 - Sense Amplifier is the most critical circuits in the periphery of CMOS memory. The performance of SA’s strongly affects both memory access time, and overall memory power dissipation. CMOS memories are required to increase speed, improve capacity and maintain low power dissipation. These ob-jectives are somewhat conflicting when it comes to sense amplifier in memories. With increased memory capacity usually comes increased bit line parasitic capacitance. This increased bit-line capacitance in turn slows down voltage sensing and makes bit-line capacitance swings energy expensive resulting in slower more energy hungry memories. Due to their great importance in memory performance sense amplifiers have become a very large class of circuits. Their main function is to sense or detect stored data from a read-selected memory cell.
 
-| ![sensefinaldrawio](https://github.com/Subha175/SRAM/assets/123578848/2dccc728-e5c0-476b-9272-d28e56a6c6a3)
- |
+| ![sensefinaldrawio](https://github.com/Subha175/SRAM/assets/123578848/2dccc728-e5c0-476b-9272-d28e56a6c6a3) |
 | :---: | 
 | Fig 6: Sense Amplifier |
 
-| ![INVERTER drawio](https://github.com/Subha175/SRAM/assets/123578848/dc8f4c37-7b83-4bd6-915d-8da38d1c5b73) |
+
+| ![invertersize drawio](https://github.com/Subha175/SRAM/assets/123578848/e48d5069-97e5-4eb8-9afd-48d9a18518f1) |
 | :---: | 
 | Sizing of Inverters |
 
-| ![image](https://github.com/Subha175/SRAM/assets/123578848/20327be9-6d13-477f-8480-1c54bf670af3) |
+| ![transistorsize drawio](https://github.com/Subha175/SRAM/assets/123578848/f26cacd0-34c3-4f83-a143-3c9d6d0b7647) |
 | :---: | 
 | Sizing of transistors in Sense-Amplifier |
 
 | ![transistoWDLENGTHr-Page-1 drawio](https://github.com/Subha175/SRAM/assets/123578848/8aaf990f-596f-4cb1-a341-e082883a081e) |
 | :---: | 
 | Fig 6.1: Timing Digram of Sense Amplifier |
+
+
 
 
 
