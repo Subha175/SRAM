@@ -1,5 +1,5 @@
 # CMOS SRAM based on 0.18 μm technology
-- Static Random Access Memory(SRAM) is a type of memory that uses flipflops to store each bit. It retains data bits in its memory as long as power is being supplied. SRAM does not have to be periodically refreshed and it provides faster access to data compared to DRAM. The sizing of transistors in SRAM cell denotes to the alternation in transistor width to satisfy the conditions for reading and writing operations.
+- Static Random Access Memory(SRAM) is a type of memory that store each bit on four transistors that form two cross coupled inverters. It retains data bits in its memory as long as power is being supplied. SRAM does not have to be periodically refreshed and it provides faster access to data compared to DRAM. The sizing of transistors in SRAM cell denotes to the alternation in transistor width to satisfy the conditions for reading and writing operations.
 
 | ![BLOCKFIN drawio](https://github.com/Subha175/SRAM/assets/123578848/3bbc6799-6b06-4faa-a215-e9fd050b1600) | 
 | :---: | 
