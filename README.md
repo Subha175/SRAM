@@ -243,6 +243,17 @@ The driver circuit also known as a write driver is one of the basic components i
 - To calculate maximum Operating frequency of SRAM : Take the maximum delay of all the process corners for 1 to 0 and 0 to 1 and increase the PC signal ON time by +10%. For PC signal OFF time take the maximum time delay of Pre-charge delay of all the proccess corners and increase by +10%.
 
 ### Delays in SRAM
+| ![read(0-- 1)delay](https://github.com/Subha175/SRAM/assets/123578848/c65daeef-7762-4d03-851d-3dc1c86c2403) |
+| :---: | 
+| Read Delay(0---->1) in SRAM |
+
+| ![read(1---- 0)delay](https://github.com/Subha175/SRAM/assets/123578848/1fb44287-aa08-4dd3-b8ff-afceec9e6d3a) |
+| :---: | 
+| Read Delay(1---->0) in SRAM  |
+
+| ![writedelaymeasure](https://github.com/Subha175/SRAM/assets/123578848/0513cb7c-43b3-4758-a76a-69d15f4a4476) |
+| :---: | 
+| Write Delay in SRAM  |
 
 
 | ![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87) |
