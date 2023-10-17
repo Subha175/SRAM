@@ -241,7 +241,10 @@ The driver circuit also known as a write driver is one of the basic components i
 - To check the performance of SRAM cell under different process corners.
 - Process corners represent various manufacturing conditions that can affect the performance of integrated circuit.
 - To calculate maximum Operating frequency of SRAM : Take the maximum delay of all the process corners for 1 to 0 and 0 to 1 and increase the PC signal ON time by +10%. For PC signal OFF time take the maximum time delay of Pre-charge delay of all the proccess corners and increase by +10%.
-  
+
+### Delays in SRAM
+
+
 | ![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87) |
 | :---: | 
 | Delays in SRAM |
