@@ -255,6 +255,10 @@ The driver circuit also known as a write driver is one of the basic components i
 | :---: | 
 | Write Delay in SRAM  |
 
+| ![pcdelaypicture](https://github.com/Subha175/SRAM/assets/123578848/87cf462e-8c21-498b-a390-b7c633947f49) |
+| :---: | 
+| Pre-Charge Delay in SRAM  |
+
 
 | ![kuchvabcd drawio (2)](https://github.com/Subha175/SRAM/assets/123578848/36637581-f8cc-474c-aa83-310f1ba9ca87) |
 | :---: | 
