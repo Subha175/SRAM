@@ -42,7 +42,7 @@
 - Menory Size ------------> 16-Byte
 - Supply Voltage ---------> 1.8 V
 - Operating Frequency ----> 50 MHz
-- Power Consumption ------> 248.62μw to 446.52μw
+- Power Consumption ------> 501.34μw to 887.34μw
 - Operable Temperature----> -40°C to 85°C
   
 # Design
@@ -267,6 +267,13 @@ The driver circuit also known as a write driver is one of the basic components i
 | :---: | 
 | Delays in SRAM |
 
+| ![delaytable drawio](https://github.com/Subha175/SRAM/assets/123578848/44abeae2-5395-4885-bf93-cad35950bea1) |
+| :---: | 
+| Delays in SRAM |
+
+| ![power drawio](https://github.com/Subha175/SRAM/assets/123578848/1531dbe0-e6c4-46be-9d56-424f7a54c068) |
+| :---: | 
+| Power Consumption in SRAM |
 
 
 ## Read/Write Operation
