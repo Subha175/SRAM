@@ -157,6 +157,7 @@ retriveal or corruption. Here we are using  PMOS in precharge so when the PC sig
  
 - We have designed this in such a way that current through transistor M0 and M1 are same i.e 1μA. So M1 and M2 are current mirror. Then the current across transistor M3 and M4 divided by half i.e 0.5μA across each transistor. As M5 and M6 are in series with M4 and M3 respectively so same current wil flow through them and M5 and M6 should be a current mirror.
 
+- When both BL and BLB will precharge to VDD the node volatge at vout(fig 6) is set to 941.3 V. Whenever there is a voltage difference between BL and BLB it senses the change and give the output accordingly. 
 | ![OKSAFINAL drawio](https://github.com/Subha175/SRAM/assets/123578848/759bc195-05ba-4f96-bf9a-25d45a091245) |
 | :---: | 
 | Fig 6: Sense Amplifier |
