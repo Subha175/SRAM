@@ -41,8 +41,9 @@
 # Specification
 - Menory Size ------------> 16-Byte
 - Supply Voltage ---------> 1.8 V
-- Operatimg Frequency ----> 50 MHz
+- Operating Frequency ----> 50 MHz
 - Power Consumption ------> 248.62μw to 446.52μw
+- Operable Temperature----> -40°C to 85°C
   
 # Design
 ## 6T-SRAM Cell
